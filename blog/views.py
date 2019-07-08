@@ -6,6 +6,7 @@ from django.views.generic import ListView
 from .models import Post, Comment
 from .forms import EmailPostForm, CommentForm
 
+
 class PostListView(ListView):
     queryset = Post.published.all()
     paginate_by = 1
