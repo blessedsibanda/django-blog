@@ -25,8 +25,9 @@
 
 ### Setup postgresql database
 * Install postgresql 
-* create a database named blog
-* create a database user named blog
+* Start the postgresql server
+* Create a database named blog
+* Create a database user named blog
 
 ```$ sudo -u postgres psql```
 
@@ -40,7 +41,18 @@
 
 ```postgres=# ALTER USER blog CREATEDB;```
 
-* start your postgresql server
+* connect to your database
+
+```\c blog;```
+
+* install the ```pg_trgm``` extension (in order to use trigrams in PostgeSQL)
+
+```CREATE EXTENSION pg_trgm;``` 
+
+* now exit the postgresql shell
+
+```\q```
+
 * replace the database PASSWORD setting in settings.py with the password you entered
 
 ### Application Start
