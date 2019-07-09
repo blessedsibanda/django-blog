@@ -43,15 +43,15 @@
 
 * connect to your database
 
-```\c blog;```
+```postgres=# \c blog;```
 
 * install the ```pg_trgm``` extension (in order to use trigrams in PostgeSQL)
 
-```CREATE EXTENSION pg_trgm;``` 
+```blog=# CREATE EXTENSION pg_trgm;``` 
 
 * now exit the postgresql shell
 
-```\q```
+```blog=# \q```
 
 * replace the database PASSWORD setting in settings.py with the password you entered
 
