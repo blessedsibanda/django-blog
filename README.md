@@ -54,3 +54,5 @@
 ```(venv)$ python manage.py createsuperuser```
 
 * Finally, run the development server and visit http://localhost:8000/blog in your browser
+
+```(venv)$ python manage.py runserver```
